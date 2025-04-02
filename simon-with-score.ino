@@ -83,6 +83,7 @@ void lightLedAndPlayTone(byte ledIndex) {
   delay(300);
   digitalWrite(ledPins[ledIndex], LOW);
   noTone(SPEAKER_PIN);
+  delay(1000);  // This line is to wait 1 second before beeping again
 }
 
 /**
